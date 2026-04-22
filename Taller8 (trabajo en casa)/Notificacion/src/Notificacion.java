@@ -1,14 +1,15 @@
+import java.util.Date;
 public abstract class Notificacion {
     private String codigo;
     private String destinatario;
     private String mensaje;
-    private String fechaEnvio;
+    private Date fechaEnvio;
     private Estado estado;
 
     public Notificacion() {
     }
 
-    public Notificacion(String codigo, String destinatario, String mensaje, String fechaEnvio, Estado estado) {
+    public Notificacion(String codigo, String destinatario, String mensaje, Date fechaEnvio, Estado estado) {
         this.codigo = codigo;
         this.destinatario = destinatario;
         this.mensaje = mensaje;
@@ -40,11 +41,11 @@ public abstract class Notificacion {
         this.mensaje = mensaje;
     }
 
-    public String getFechaEnvio() {
+    public Date getFechaEnvio() {
         return fechaEnvio;
     }
 
-    public void setFechaEnvio(String fechaEnvio) {
+    public void setFechaEnvio(Date fechaEnvio) {
         this.fechaEnvio = fechaEnvio;
     }
 

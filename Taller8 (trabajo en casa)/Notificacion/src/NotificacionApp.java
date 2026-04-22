@@ -1,3 +1,5 @@
+import java.util.Date;
+
 public class NotificacionApp extends Notificacion {
     private String nombreAplicacion;
     private String idDispositivo;
@@ -5,7 +7,7 @@ public class NotificacionApp extends Notificacion {
     public NotificacionApp() {
     }
 
-    public NotificacionApp(String nombreAplicacion, String idDispositivo, String codigo, String destinatario, String mensaje, String fechaEnvio, Estado estado) {
+    public NotificacionApp(String nombreAplicacion, String idDispositivo, String codigo, String destinatario, String mensaje, Date fechaEnvio, Estado estado) {
         super(codigo, destinatario, mensaje, fechaEnvio, estado);
         this.nombreAplicacion = nombreAplicacion;
         this.idDispositivo = idDispositivo;

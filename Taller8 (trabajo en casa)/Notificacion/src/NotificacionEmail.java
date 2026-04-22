@@ -1,3 +1,4 @@
+import java.util.Date;
 public class NotificacionEmail extends Notificacion {
     private String asunto;
     private String correoRemitente;
@@ -5,7 +6,7 @@ public class NotificacionEmail extends Notificacion {
     public NotificacionEmail() {
     }
 
-    public NotificacionEmail(String asunto, String correoRemitente, String codigo, String destinatario, String mensaje, String fechaEnvio, Estado estado) {
+    public NotificacionEmail(String asunto, String correoRemitente, String codigo, String destinatario, String mensaje, Date fechaEnvio, Estado estado) {
         super(codigo, destinatario, mensaje, fechaEnvio, estado);
         this.asunto = asunto;
         this.correoRemitente = correoRemitente;

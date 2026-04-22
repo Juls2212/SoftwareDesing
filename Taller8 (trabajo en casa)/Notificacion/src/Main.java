@@ -1,3 +1,5 @@
+import java.util.Date;
+
 public class Main {
     public static void main(String[] args) {
         Notificacion notificacion1 = new NotificacionEmail(
@@ -6,7 +8,7 @@ public class Main {
                 "N001",
                 "ana@correo.com",
                 "Sus calificaciones ya fueron publicadas en el sistema.",
-                "2026-04-21",
+                new Date(),
                 Estado.PENDIENTE
         );
 
@@ -15,7 +17,7 @@ public class Main {
                 "N002",
                 "Carlos Perez",
                 "Recuerde realizar el pago de su matricula antes de la fecha limite.",
-                "2026-04-21",
+                new Date(),
                 Estado.PENDIENTE
         );
 
@@ -25,7 +27,7 @@ public class Main {
                 "N003",
                 "Laura Gomez",
                 "La clase de Programacion Orientada a Objetos ha sido cancelada.",
-                "2026-04-21",
+                new Date(),
                 Estado.PENDIENTE
         );
 

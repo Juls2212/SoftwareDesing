@@ -1,10 +1,11 @@
+import java.util.Date;
 public class NotificacionSMS extends Notificacion {
     private String numeroTelefono;
 
     public NotificacionSMS() {
     }
 
-    public NotificacionSMS(String numeroTelefono, String codigo, String destinatario, String mensaje, String fechaEnvio, Estado estado) {
+    public NotificacionSMS(String numeroTelefono, String codigo, String destinatario, String mensaje, Date fechaEnvio, Estado estado) {
         super(codigo, destinatario, mensaje, fechaEnvio, estado);
         this.numeroTelefono = numeroTelefono;
     }
